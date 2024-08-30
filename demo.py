@@ -5,16 +5,19 @@ client = Client()
 client.connect('127.0.0.1', 10800)
 
 #Create cache
-my_cache = client.get_cache("cache7")
+my_cache = client.get_cache("testCache")
 
 #Put value in cache
-my_cache.put("heartrate", 60)
+my_cache.put("heartrate", 63)
 
 #Get value from cache
 result = my_cache.get("heartrate")
 
-telemetry = {"heartrate": result, "enabled": False, "currentFirmwareVersion": "v1.2.2"}
-client = TBDeviceMqttClient("104.196.24.70", username="ywvVarv8kzPfRQTsS1Ya")
+telemetry = {"heartrate": result}
+
+print(telemetry)
+
+client = TBDeviceMqttClient("demo.thingsboard.io", username="eqEy6xdQPTPnCOAFSUrL")
 # Connect to ThingsBoard
 client.connect()
 # Sending telemetry without checking the delivery status
