@@ -1,4 +1,4 @@
-## 🔗 Ignite-to-ThingsBoard Telemetry Bridge
+🔗 Apache Ignite & ThingsBoard Telemetry Bridge
 
 This script demonstrates an integration between Apache Ignite and ThingsBoard using the MQTT protocol. It fetches device data, such as heart rate, from an Ignite cache and sends it to a ThingsBoard instance as telemetry.
 
